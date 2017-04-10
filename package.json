@@ -87,6 +87,7 @@
     "object relational mapper"
   ],
   "main": "index",
+  "types": "./main.d.ts",
   "scripts": {
     "test": "if [ $COVERAGE ]; then npm run codeclimate; else npm run jshint && npm run teaser && npm run test-unit && npm run test-integration; fi",
     "test-docker": "docker-compose run sequelize /bin/sh -c \"npm run test-all\"",
